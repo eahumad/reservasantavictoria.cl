@@ -1,0 +1,33 @@
+
+@import 'reset';
+@import 'base';
+
+html, body {
+  min-height: 100%;
+}
+
+
+
+.wrapper {
+  background-color: rgba(255, 255, 255,0.7);
+  height: 100vh;
+
+  justify-content: space-between;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  flex-direction: column;
+
+  main {
+    justify-content: center;
+    text-align: center;
+  }
+
+  footer {
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+}
+

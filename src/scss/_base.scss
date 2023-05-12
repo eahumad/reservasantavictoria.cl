@@ -1,0 +1,35 @@
+
+body {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 16px;
+  background-position: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Marcellus', serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+
+a {
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
