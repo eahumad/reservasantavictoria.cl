@@ -1,0 +1,13 @@
+header {
+
+
+  #title {
+    & > p:first-of-type {
+      @extend .h1;
+    }
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+}
