@@ -10,71 +10,113 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto+Flex:wght@400;600&display=swap"
     rel="stylesheet">
-  <title>Document</title>
+  <title>Reserva Santa Victoria</title>
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-  <header>
+  <header id="inicio">
+
+    <div id="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="/functions/video.php?file=reserva_santa_victoria.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
     <nav>
-      <a href="/">
-        <img src="/images/logo.png" alt="">
-      </a>
 
+      <div>
+        <a href="#inicio" id="link-inicio">
+          <div class="brand">
+            <img src="/images/logo.png" alt="">
+            <div>
+              <span>Reserva</span>
+              <span>Santa</br>Victoria</span>
+            </div>
 
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#masterplan">Masterplan</a></li>
-        <li><a href="#Multimedia">Multimedia</a></li>
-        <li><a href="#comollegar">¿Cómo llegar?</a></li>
-        <li><a href="#comollegar">Cotizar</a></li>
-      </ul>
+          </div>
+        </a>
+
+        <button id="menu-button"
+          onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+          aria-label="Main Menu">
+          <svg width="50" height="50" viewBox="0 0 100 100">
+            <path class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+      </div>
+
+      <div id="menu-links">
+        <ul>
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#masterplan">Masterplan</a></li>
+          <li><a class="nav-link" href="#multimedia">Multimedia</a></li>
+          <li><a class="nav-link" href="#comollegar">¿Cómo llegar?</a></li>
+          <li><a class="nav-link btn btn-earth" href="#cotizar" class="btn btn-earth">Cotizar</a></li>
+        </ul>
+      </div>
+
     </nav>
 
     <div id="title">
       <p>Reserva Santa Victoria</p>
       <p>Construye tu Hogar en un Entorno Sereno y Natural</p>
       <h1>Parcelas de agrado, en el corazón del maule</h1>
-
-      <a href="/#masterplan" class="btn-earth-outline">Conocer más</a>
+      <a href="/#masterplan" class="btn btn-earth-outline">Conocer más</a>
     </div>
   </header>
 
   <section id="caracteristicas">
 
-    <div class="container">
+    <div>
       <h2>Características</h2>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas necessitatibus molestias deserunt a culpa dolorem
-        dicta excepturi,
+        Nuestro proyecto Reserva Santa Victoria ofrece una experiencia única en un entorno natural y campestre, combinando las comodidades de la ciudad. Ubicado en el corazón del Maule, en la comuna de Río Claro, una zona reconocida por su agricultura, este desarrollo inmobiliario ofrece parcelas y terrenos ideales para aquellos que desean vivir en un ambiente tranquilo y apacible.
       </p>
       <p>
-        dolorum voluptatum illum dolore non accusantium, tempore inventore ut laudantium nostrum explicabo atque!
+        Con una ubicación privilegiada, Reserva Santa Victoria brinda acceso a todos los servicios necesarios para una vida cómoda. A pocos minutos del centro urbano de la comuna, los residentes podrán encontrar bancos, registro civil, farmacias, colegios, servicios de salud, supermercados, iglesias y mucho más.
       </p>
 
       <a href="#cotizar" class="btn btn-black-outline">Contáctanos</a>
     </div>
+    <div>
+      <img src="/images/aerea.jpg" alt="">
+    </div>
   </section>
 
   <section id="detalles">
-    <img src="/images/aerea.jpg" alt="">
+
 
     <div class="container">
 
       <div class="detalle">
-        <i class="fa-solid fa-road"></i>
+        <div>
+          <img src="/images/direction.png" alt="Camino habilitado de 7 metros">
+        </div>
         <p>Camino de 7 metros</p>
       </div>
       <div class="detalle">
-        <i class="fa-solid fa-dungeon"></i>
+        <div>
+          <img src="/images/fence.png" alt="Portón de acceso">
+        </div>
         <p>Portón de acceso</p>
       </div>
       <div class="detalle">
-        <i class="fa-solid fa-lightbulb"></i>
+        <div>
+          <img src="/images/power.png" alt="Postación">
+        </div>
         <p>Luz cableado aéreo</p>
       </div>
       <div class="detalle">
-        <i class="fa-regular fa-file-lines"></i>
+        <div>
+          <img src="/images/document.png" alt="Parcelas con rol propio">
+        </div>
         <p>Loteo con rol propio</p>
       </div>
 
@@ -93,30 +135,78 @@
 
         </div>
         <div class="buttons">
-          <button class="contactar">Contactar</button>
+          <button class="cotizar">Cotizar</button>
           <button class="cerrar">Cerrar</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="multmedia">
+  <section id="multimedia">
     <h2>Multimedia</h2>
   </section>
   <section id="comollegar">
-
     <h2>¿Cómo llegar?</h2>
 
-    <iframe class="map"
-      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3257.8245633376373!2d-71.39209648475264!3d-35.26062008029464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzXCsDE1JzM4LjIiUyA3McKwMjMnMjMuNyJX!5e0!3m2!1ses!2scl!4v1684637969197!5m2!1ses!2scl"
-      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container">
+      <div id="map">
+
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <a href="https://goo.gl/maps/fiiyfvzksRRcYCZ9A" class="btn btn-earth" target="_blank">
+        Abrir en google maps
+      </a>
+    </div>
+
+
   </section>
   <section id="cotizar">
     <h2>Cotizar</h2>
-  </section>~
+    <div class="container">
+      <p>Escribenos y cotiza tu nueva parcela, uno de nuestros ejecutivos se pondrá en contacto a la brevedad.</p>
+      <form id="formCotizar">
+        <div>
+          <input type="text" name="nombre" placeholder="Nombre"  required>
+        </div>
+        <div>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="telefono" placeholder="Teléfono" required>
+          <input type="text" name="loteo" placeholder="Loteo" required>
+        </div>
+        <div>
+          <textarea name="mensaje" placeholder="Mensaje"></textarea required>
+        </div>
+
+        <button class="btn btn-earth">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+
+
+  </section>
   <footer>
-    <h2>Un proyecto de <br><a href="https://www.propiedadeschaitenmaule.cl">Propiedades Chaiten</a></h2>
+    <div class="brand">
+      <img src="/images/logo.png" alt="">
+      <h2>
+        <span>Reserva</span>
+        <span>Santa</br>Victoria</span>
+      </h2>
+
+    </div>
+
+    <p class="copy">Copyright© 2023 <a href="https://www.propiedadeschaitenmaule.cl/" target="_blank">Propiedades Chaitén</a>. Todos los derechos reservados.</p>
+
+
+    <div id="propiedades_chaiten">
+      <a href="https://www.propiedadeschaitenmaule.cl/" target="_blank">
+        <img src="/images/propiedades_chaiten.png" alt="Propiedades Chaiten">
+      </a>
+    </div>
   </footer>
 
 
@@ -128,6 +218,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
     integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIXLRkqHrfvnytJ1kfWzLmuPR1SlGGqjk"></script>
+
 </body>
 
 </html>

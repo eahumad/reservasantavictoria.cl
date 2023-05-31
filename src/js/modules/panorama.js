@@ -22,8 +22,8 @@ const initPanorama = async function() {
     cerrarDetails()
   })
 
-  document.querySelector('#panorama #details .contactar').addEventListener('click', (e) => {
-    irAContacto()
+  document.querySelector('#panorama #details .cotizar').addEventListener('click', (e) => {
+    irACotizar()
   })
   
 }
@@ -34,9 +34,9 @@ const cerrarDetails = async function() {
   document.querySelector('#panorama #details').classList.remove('active')
 }
 
-const irAContacto = async function() {
+const irACotizar = async function() {
   console.log('ir a contacto')
-  window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#contacto"
+  window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#cotizar"
 }
 
 
@@ -82,6 +82,12 @@ const createViewer = async function() {
     let cords = viewer.mouseEventToCoords(e);
     console.log(cords);
   })
+
+  //right click
+  viewer.on('contextmenu', function(e) {
+    let cords = viewer.mouseEventToCoords(e);
+    console.log(cords);
+  })
   
 }
 
@@ -89,15 +95,15 @@ const getViewerParams = function() {
   let params = {
     /* pitch : -67.49588568441906,
     yaw : 115.70633233176454, */
-    pitch : -84,
-    yaw : 321,
-    hfov : 200,
+    pitch : -87,
+    yaw : 0,
+    hfov : 500,
     height: window.innerHeight-100,
   }
   
   if( window.innerWidth < window.innerHeight)  {
-    params.pitch = -69.53726010556991;
-    params.yaw = 46.76916574997824;
+    params.pitch = -87;
+    params.yaw = 90;
   }
   
   if(  window.innerWidth <= 768 ) {

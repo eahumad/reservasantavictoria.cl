@@ -1,0 +1,63 @@
+#cotizar {
+  order: 7;
+  background-color: $dark-gray;
+
+  h2 {
+    color: $earth;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  form {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+    div {
+      display: flex;
+      flex-flow: column;
+
+      input, textarea, select {
+        color: white;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        transition: border-bottom 0.5 ease-in-out;
+        padding: 10px 0px;
+        margin-top: 9px;
+
+        &::placeholder {
+          text-transform: uppercase;
+        }
+
+        &:active, &:focus {
+          outline: none;
+          border-bottom: 1px solid $earth;
+        }
+        
+      }
+    }
+
+    button {
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    form {
+      div {
+        display: flex;
+        flex-flow: row;
+        gap: 10px;
+
+        input, textarea, select {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

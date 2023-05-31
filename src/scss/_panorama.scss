@@ -40,7 +40,7 @@
   #details {
 
     position: absolute;
-    background-color: rgba(var(--color-secondary), 0.7);
+    background-color: $earth;
     color: white;
     height: 180px;
     width: 180px;
@@ -49,12 +49,16 @@
     z-index: 2;
     text-align: left;
     padding: 18px;
-    border-radius: $radius 0 0 $radius;
+    border-radius: 10px 0 0 10px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);
     transition: right 1s;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
     transform: translateZ(999999px);
+
+    button {
+      background-color: transparent;
+      border: transparent;
+      font-weight: 600;
+    }
 
     &.active {
       right: 0;

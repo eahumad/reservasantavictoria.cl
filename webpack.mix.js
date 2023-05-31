@@ -1,6 +1,6 @@
 let mix = require('laravel-mix')
 
-mix.setPublicPath('dist/')
+mix.setPublicPath('public_html/')
 
 mix
   .options({
@@ -15,22 +15,29 @@ mix
       }
     }
   })
-  .js('src/js/app.js', 'dist/assets')
-  .sass('src/scss/app.scss', 'dist/assets')
-  .copy('src/img/*.jpg','dist/images/')
+  .js('src/js/app.js', 'public_html/assets')
+  .sass('src/scss/app.scss', 'public_html/assets')
+  .copy('src/img/*.jpg', 'public_html/images/')
+  .copy('src/img/*.png', 'public_html/images/')
+  .copy('src/img/favicon.png', 'public_html/')
+  .copy('src/php/*.php', 'public_html/functions/')
+  .copy('src/templates/*.html', 'public_html/templates/')
 
 mix.version()
-.sourceMaps()
+  .sourceMaps()
 
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 mix.webpackConfig({
+  output: {
+    publicPath: "",
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
-      output: 'dist'
+      output: 'public_html'
     })
   ]
 });

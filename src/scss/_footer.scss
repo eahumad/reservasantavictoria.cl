@@ -1,0 +1,53 @@
+footer {
+  order: 8;
+  background-color: white;
+  color: $black;
+  padding: 1rem;
+
+  .brand {
+    display: flex;
+    gap: 1rem;
+    max-width: 231px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      height: 80px;
+      width: 80px;
+    }
+
+    h2 {
+      text-align: left;
+      margin-top: 10px;
+
+      span {
+        text-transform: uppercase;
+        display: block;
+        font-family: 'Marcellus', serif;
+
+        &:first-of-type {
+          color: $earth;
+          letter-spacing: 0.6rem;
+          font-size: 0.9rem;
+        }
+
+        &:last-of-type {
+          font-size: 1.3rem;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+  }
+
+  .copy {
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  #propiedades_chaiten {
+    img {
+      max-width: 200px;
+      filter: brightness(0%);
+    }
+  }
+}

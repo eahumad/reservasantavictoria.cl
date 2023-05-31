@@ -1,11 +1,16 @@
 @import 'variables';
 @import 'reset';
 @import 'base';
+@import 'button';
+@import 'menu';
 
 
 html,
 body {
   min-height: 100%;
+
+  display: flex;
+  flex-flow: column;
 }
 
 .w-100 {
@@ -14,7 +19,9 @@ body {
 
 .container {
   width: 80%;
-  margin-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
 }
 
 section {
@@ -28,82 +35,24 @@ footer {
 }
 
 
-.btn {
-  border-radius: 10em;
-  text-align: center;
-  font-weight: 600;
-  padding: 16px 28px;
-}
-
-.btn-earth {
-  @extend .btn;
-  background-color: $earth;
-  color: $white;
-}
-
-.btn-earth-outline {
-  @extend .btn;
-  background-color: $earth;
-  color: $white;
-  border: 2px solid $earth;
-}
-
-.btn-black-outline {
-  @extend .btn;
-  background-color: transparent;
-  color: $black;
-  border: 2px solid $black;
-}
-
-#detalles {
-
-  img {
-    width: 100%;
-  }
 
 
-  &>.container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .detalle {
-    display: flex;
-    flex-flow: row;
-
-  }
-}
-
-
-#caracteristicas {
-
-  background-color: $earth;
-  text-align: center;
-
-  p {
-    font-size: 1.1rem;
-    line-height: 1.4rem;
-  }
-
-  a {
-    display: block;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(0.9)
-  }
-}
 
 #multimedia {
   background-color: $black;
   color: $white;
 }
 
-#comollegar {
-  background-color: $black;
-  color: $white;
-}
+
 
 @import 'header';
+@import 'caracteristicas';
+@import 'detalles';
+@import 'masterplan';
+@import 'multimedia';
+@import 'comollegar';
+@import 'cotizar';
+@import 'footer';
 
 @import 'panorama';
+@import 'hotspot';
