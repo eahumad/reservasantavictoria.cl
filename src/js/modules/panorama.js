@@ -70,7 +70,7 @@ const createViewer = async function() {
   viewer = pannellum.viewer('panorama', {
     "autoLoad": true,
     "type": "equirectangular",
-    "panorama": "/images/panorama.jpg",
+    "panorama": "/images/panorama.webp",
     "pitch": params.pitch,
     "yaw": params.yaw,
     "hfov": params.hfov,

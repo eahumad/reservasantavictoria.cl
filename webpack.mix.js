@@ -38,7 +38,9 @@ mix.webpackConfig({
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
-      output: 'public_html'
+      output: 'public_html',
+      inject: 'body',
+      hash: true
     })
   ]
 });

@@ -15,6 +15,7 @@ cwebp -q 50 -resize 0 100 -mt power.png -o power.webp
 cwebp -q 50 -resize 0 100 -mt direction.png -o direction.webp 
 cwebp -q 50 -resize 0 124 -mt favicon.png -o favicon.webp 
 cwebp -q 50 -mt aerea.jpg -o aerea.webp 
+cwebp -q 50 -mt panorama.jpg -o panorama.webp 
 
 rm *.jpg 
 rm *.png 
@@ -38,4 +39,6 @@ cd ../../
 
 sed -i'.bak' -e 's/\.jpg/\.webp/g' index.html
 sed -i'.bak' -e 's/\.png/\.webp/g' index.html
+
+
 

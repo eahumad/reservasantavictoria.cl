@@ -12,7 +12,7 @@
     rel="stylesheet">
   <title>Reserva Santa Victoria</title>
   <link rel="icon" type="image/png" href="favicon.png">
-<script defer src="/assets/app.js"></script><link href="assets/app.css" rel="stylesheet"></head>
+<link href="assets/app.css?dad9f843b556bd72" rel="stylesheet"></head>
 
 <body>
   <header id="inicio">
@@ -233,7 +233,7 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/56989024291?Hola, estoy interesado en el proyecto reserva Santa Victoria" target="_blank" id="wa-link">
+  <a href="https://wa.me/56989024291?text=Hola, estoy interesado en el proyecto reserva Santa Victoria" target="_blank" id="wa-link">
     <img src="/images/whatsapp.png" alt="Cotiza tu parcela">
   </a>
 
@@ -248,6 +248,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIXLRkqHrfvnytJ1kfWzLmuPR1SlGGqjk"></script>
 
-</body>
+<script defer src="/assets/app.js?dad9f843b556bd72"></script></body>
 
 </html>
