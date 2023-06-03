@@ -47,6 +47,10 @@ input {
   border-radius: 0;
 }
 
+a {
+  color: inherit;
+}
+
 body {
   background-color: #1C1D20;
   color: #FFF;
@@ -185,9 +189,11 @@ nav #menu-links ul li a {
   display: block;
   color: #FFF;
   padding: 1rem 0;
+  font-size: 0.8rem;
 }
 nav #menu-links ul li a.btn, nav #menu-links ul li a.btn-earth, nav #menu-links ul li a.btn-earth-outline, nav #menu-links ul li a.btn-black-outline {
-  transform: scale(0.9);
+  font-size: 1rem;
+  transform: scale(0.8);
 }
 nav.opened {
   background-color: #1C1D20;
@@ -228,6 +234,24 @@ nav.opened #menu-links {
   }
 }
 
+#wa-link {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 4;
+  border-radius: 100%;
+  padding: 0;
+  overflow: visible;
+  height: 60px;
+}
+#wa-link img {
+  width: 60px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   min-height: 100%;
@@ -249,6 +273,7 @@ body {
 section {
   padding: 3rem 0 4rem 0;
   width: 100%;
+  scroll-margin-top: 134px;
 }
 
 footer {
@@ -449,6 +474,71 @@ header #title .btn, header #title .btn-earth, header #title .btn-earth-outline, 
 #multimedia {
   order: 5;
 }
+#multimedia .gallery {
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+#multimedia .gallery .images {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+  overflow-x: scroll;
+  gap: 5px;
+}
+#multimedia .gallery .images img {
+  width: 90vw;
+  scroll-snap-align: center;
+}
+#multimedia .popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+#multimedia .popup img {
+  max-width: 90%;
+  max-height: 90%;
+}
+#multimedia .popup .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#multimedia .popup .close:hover,
+#multimedia .popup .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 960px) {
+  #multimedia .gallery .images {
+    transition: transform 0.5s ease-in-out;
+    scroll-snap-type: none;
+    cursor: grab;
+  }
+  #multimedia .gallery .images::-webkit-scrollbar {
+    display: none;
+  }
+  #multimedia .gallery .images.active {
+    cursor: grabbing;
+    transform: scale(1.05);
+  }
+  #multimedia .gallery .images img {
+    scroll-snap-align: none;
+    width: 45vw;
+  }
+}
 
 #comollegar {
   order: 6;
@@ -536,16 +626,18 @@ header #title .btn, header #title .btn-earth, header #title .btn-earth-outline, 
   color: white;
   border: none;
   background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
   transition: border-bottom 0.5 ease-in-out;
   padding: 10px 0px;
   margin-top: 9px;
 }
 #cotizar form div input::-moz-placeholder, #cotizar form div textarea::-moz-placeholder, #cotizar form div select::-moz-placeholder {
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
 }
 #cotizar form div input::placeholder, #cotizar form div textarea::placeholder, #cotizar form div select::placeholder {
   text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
 }
 #cotizar form div input:active, #cotizar form div input:focus, #cotizar form div textarea:active, #cotizar form div textarea:focus, #cotizar form div select:active, #cotizar form div select:focus {
   outline: none;
@@ -697,6 +789,7 @@ footer #propiedades_chaiten img {
   background-color: transparent;
   min-height: 25px;
   width: 100px;
+  color: #1C1D20;
 }
 .pnlm-hotspot-base.hotspot-lugar span {
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);

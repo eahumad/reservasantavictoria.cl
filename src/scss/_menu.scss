@@ -88,9 +88,11 @@ nav {
           display: block;
           color: $white;
           padding: 1rem 0;
+          font-size: 0.8rem;
 
           &.btn {
-            transform: scale(0.9)
+            font-size: 1rem;
+            transform: scale(0.8)
           }
         }
       }

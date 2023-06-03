@@ -1,7 +1,7 @@
 {
-    "/assets/app.js": "/assets/app.js?id=f6247e77c14eac84c2177eb53916e5e5",
-    "/assets/app.css": "/assets/app.css?id=c300e27c0e9bb5d0b86fd643446ddc35",
-    "/images/aerea.jpg": "/images/aerea.jpg?id=872e6d462d6458eb0c3becd8a879ad38",
+    "/assets/app.js": "/assets/app.js?id=0d1332dd256c2688da2d8821a5fa3497",
+    "/assets/app.css": "/assets/app.css?id=e2c2cb7d8e54dd7c3c4130b47ad3a454",
+    "/images/aerea.jpg": "/images/aerea.jpg?id=37cc0722bb4caaacf9172d4468045a91",
     "/images/bg.jpg": "/images/bg.jpg?id=c5875739836a957a89870d1fa38a2295",
     "/images/panorama.jpg": "/images/panorama.jpg?id=377c9fb1700e1d941063853b0e7f9ff7",
     "/images/direction.png": "/images/direction.png?id=d62590b4fb0af7ddbe8de075e2a64467",
@@ -12,8 +12,20 @@
     "/images/pin.png": "/images/pin.png?id=17673232f894a20cae7f5cfb0d8bc26a",
     "/images/power.png": "/images/power.png?id=fdafc766aa8a5f40cda3a35da6db0e95",
     "/images/propiedades_chaiten.png": "/images/propiedades_chaiten.png?id=70087affcf2d8b80166eb19fdfd53f30",
+    "/images/whatsapp.png": "/images/whatsapp.png?id=e4b68c91b3671af0b4e6f08761551656",
+    "/images/galeria/0001.jpg": "/images/galeria/0001.jpg?id=0ba4b83880482b08eac2fa9dffd7cb5e",
+    "/images/galeria/0002.jpg": "/images/galeria/0002.jpg?id=3e438ce9c03564844f842e60aca7bc67",
+    "/images/galeria/0003.jpg": "/images/galeria/0003.jpg?id=cf3d7bcbd84c514c42823fe1bdfad53b",
+    "/images/galeria/0004.jpg": "/images/galeria/0004.jpg?id=11bc1bb16c6cefd24416e46dc30a2bae",
+    "/images/galeria/0005.jpg": "/images/galeria/0005.jpg?id=27f648fa8f6625af7f73aadd76348bc1",
+    "/images/galeria/0006.jpg": "/images/galeria/0006.jpg?id=fbd20e2769944847459d656b59b4deef",
+    "/images/galeria/0007.jpg": "/images/galeria/0007.jpg?id=93cf8a26e3a3202ace6f24262afb05c1",
+    "/images/galeria/0008.jpg": "/images/galeria/0008.jpg?id=b56e3a78e292331268fc54af3a9a3787",
+    "/images/galeria/0009.jpg": "/images/galeria/0009.jpg?id=1dba1be797c1ba0aaa4ca809fea4f344",
+    "/images/galeria/0010.jpg": "/images/galeria/0010.jpg?id=070eee1dc1798335ddbd6fb2606d5574",
+    "/images/galeria/0011.jpg": "/images/galeria/0011.jpg?id=12540324463b0a9838de063ce7dfbeb3",
     "/favicon.png": "/favicon.png?id=cf711fc76da3fc0c32be9c63d93c4d86",
-    "/functions/mail.php": "/functions/mail.php?id=9fd0c1683514f94d6def173f569de7bc",
+    "/functions/mail.php": "/functions/mail.php?id=748d4cb3e80f09a1f52a4758e1f49352",
     "/functions/video.php": "/functions/video.php?id=eaa55df37ccda7e913774cfcef734aab",
-    "/templates/contacto.html": "/templates/contacto.html?id=6854d271283966b2c286a8134eb72316"
+    "/templates/contacto.html": "/templates/contacto.html?id=3688e7ed211506c5fc242c0c7cfff51f"
 }

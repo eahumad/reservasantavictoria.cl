@@ -19,6 +19,7 @@ mix
   .sass('src/scss/app.scss', 'public_html/assets')
   .copy('src/img/*.jpg', 'public_html/images/')
   .copy('src/img/*.png', 'public_html/images/')
+  .copy('src/img/galeria/*.jpg', 'public_html/images/galeria')
   .copy('src/img/favicon.png', 'public_html/')
   .copy('src/php/*.php', 'public_html/functions/')
   .copy('src/templates/*.html', 'public_html/templates/')

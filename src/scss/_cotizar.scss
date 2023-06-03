@@ -24,13 +24,14 @@
         color: white;
         border: none;
         background-color: transparent;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.75);
         transition: border-bottom 0.5 ease-in-out;
         padding: 10px 0px;
         margin-top: 9px;
 
         &::placeholder {
           text-transform: uppercase;
+          color: rgba(255, 255, 255, 0.75);
         }
 
         &:active, &:focus {

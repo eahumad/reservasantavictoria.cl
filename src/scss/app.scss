@@ -3,7 +3,12 @@
 @import 'base';
 @import 'button';
 @import 'menu';
+@import 'walink';
 
+
+html {
+  scroll-behavior: smooth;
+}
 
 html,
 body {
@@ -27,6 +32,8 @@ body {
 section {
   padding: 3rem 0 4rem 0;
   width: 100%;
+  scroll-margin-top: 134px;
+
 }
 
 footer {
