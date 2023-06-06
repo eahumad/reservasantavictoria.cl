@@ -5,6 +5,8 @@
     min-height: 25px;
     width: 100px;
     color: $black;
+
+    
     
 
 
@@ -48,6 +50,20 @@
       background-color: transparent;
     }
 
+
+    &.altura-2 {
+
+
+      .line {
+        height: 100px;
+      }
+
+      .clear {
+        height: 100px;
+      }
+
+
+    }
    
   }
 

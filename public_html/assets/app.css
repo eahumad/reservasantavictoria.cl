@@ -65,6 +65,10 @@ p {
   margin-bottom: 1rem;
 }
 
+b {
+  font-weight: 600;
+}
+
 h1, h2, h3 {
   font-family: "Marcellus", serif;
 }
@@ -352,6 +356,7 @@ header #title p {
 header #title h1 {
   font-size: 1rem;
   font-family: "Roboto Flex", sans-serif;
+  line-height: 1.2rem;
 }
 header #title .btn, header #title .btn-earth, header #title .btn-earth-outline, header #title .btn-black-outline {
   display: block;
@@ -826,6 +831,12 @@ footer #propiedades_chaiten img {
   height: 55px;
   width: 1px;
   background-color: transparent;
+}
+.pnlm-hotspot-base.hotspot-lugar.altura-2 .line {
+  height: 100px;
+}
+.pnlm-hotspot-base.hotspot-lugar.altura-2 .clear {
+  height: 100px;
 }
 .pnlm-hotspot-base.hotspot-lote {
   background-color: white;

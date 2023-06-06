@@ -140,10 +140,10 @@ const generateLugarHostpost = function(lugar) {
   return {
     "pitch": lugar.pitch ,
     "yaw": lugar.yaw,
-    "cssClass": "hotspot-lugar",
+    "cssClass": "hotspot-lugar" + (lugar.altura == 2?' altura-2':''),
     "createTooltipArgs": lugar,
     "createTooltipFunc": (hotSpotDiv, lugar) => {
-      let clearHeight = (Math.floor(lugar.nombre.length/12)+1)*55
+      let clearHeight = (Math.floor(lugar.nombre.length/12)+1)*(lugar.altura == 2?81:55)
       hotSpotDiv.innerHTML = `<div>
       <span>${lugar.nombre}</span>
       <div class="line"></div>
@@ -204,6 +204,10 @@ const showDetails = function(lote) {
   
   if( parseInt(lote.uf) ) {
     txt = txt + `Valor: ${parseInt(lote.uf).toLocaleString('es-CL')} UF<br>`
+  }
+
+  if( parseInt(lote.clp) ) {
+    txt = txt + `Valor: $${parseInt(lote.clp).toLocaleString('es-CL')}<br>`
   }
 
   content.innerHTML = txt
