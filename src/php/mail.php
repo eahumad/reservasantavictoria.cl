@@ -29,7 +29,7 @@ try {
 
   // Configuración del correo electrónico
   $receiver = 'propiedadeschaitenmaule@gmail.com';
-  $receiver = 'eahumada@seniorti.cl';
+  //$receiver = 'eahumada@seniorti.cl';
   $asunto = "Reserva Santa Victoria -  $nombre";
 
   $template = file_get_contents(dirname(__FILE__) . '/../templates/contacto.html');

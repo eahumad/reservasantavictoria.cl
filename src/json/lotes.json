@@ -1,5 +1,5 @@
 [
-  { "numero":1, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"12565",   "clp":"36000000", "pitch":-30, "yaw":-79, "visible": true  },
+  { "numero":1, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"12565",   "clp":"36000000", "pitch":-30, "yaw":-79, "visible": true  },
   { "numero":2, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"5000",   "clp":"39000000", "pitch":-26, "yaw":-91, "visible": true  },
   { "numero":3, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"4540",   "clp":"39000000",    "pitch":-29, "yaw":-89, "visible": true  },
   { "numero":4, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"4924",   "clp":"39000000", "pitch":-32, "yaw":-86, "visible": true  },

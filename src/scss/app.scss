@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'reset';
+@import 'helpers';
 @import 'base';
 @import 'button';
 @import 'menu';
@@ -32,8 +33,11 @@ body {
 section {
   padding: 3rem 0 4rem 0;
   width: 100%;
-  scroll-margin-top: 134px;
+  scroll-margin-top: 88px;
 
+  @media screen and (min-width: $breakpoint) {
+    scroll-margin-top: 136px;
+  }
 }
 
 footer {

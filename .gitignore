@@ -6,3 +6,7 @@ vendor
 .mp4
 public_html.zip
 public_html/*.zip
+public_html/images/*.png
+public_html/images/*.jpg
+public_html/images/galeria/*.png
+public_html/images/galeria/*.jpg
