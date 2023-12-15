@@ -1,3 +1,5 @@
+name: update_site
+
 on: 
   push: 
     branches: [ "main" ]
