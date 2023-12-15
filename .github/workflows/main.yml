@@ -16,7 +16,7 @@ jobs:
 
     - name: build
       uses: mikeal/npx@master
-      run: npx mix build
+      #run: npx mix build
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
