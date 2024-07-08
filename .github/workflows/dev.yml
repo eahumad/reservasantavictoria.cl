@@ -3,7 +3,7 @@ name: Deploy to hosting
 on:
   push:
     branches:
-      - main
+      - dev
   workflow_dispatch:
 
 jobs:
@@ -24,12 +24,3 @@ jobs:
 
       - name: Build
         run: npx mix build
-
-      - name: Copiar a servidor FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASS }}
-          local-dir: ./public_html/
-          remote-dir: /public_html
