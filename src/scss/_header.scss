@@ -1,0 +1,145 @@
+
+
+header {
+  order: 1;
+  position: relative;
+  height: 100vh;
+
+  #video-background {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+
+    video {
+      height: 100vh;
+      margin-left: -50%;
+      display: block;
+      z-index: 1;
+    }
+
+    &::after {
+      top:0;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      content: " ";
+      z-index: 2;
+    }
+  }
+
+
+
+  #link-inicio {
+    display: inline-block;
+  }
+
+  .brand {
+    display: flex;
+    gap: 1rem;
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+
+    div {
+      margin-top: 4px;
+      font-size: 0.7rem;
+
+      span {
+        text-transform: uppercase;
+        display: block;
+        font-family: 'Marcellus', serif;
+
+        &:first-of-type {
+          color: $earth;
+          letter-spacing: 0.6em;
+          font-size: 0.9em;
+        }
+
+        &:last-of-type {
+          font-size: 1.3em;
+          letter-spacing: 0.2em;
+        }
+      }
+    }
+
+    @media screen and (min-width: $breakpoint) {
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+      div {
+        font-size: 1rem;
+      }
+    }
+  }
+
+
+  #title {
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding-top: 300px;
+    text-align: center;
+    z-index: 3;
+
+    p {
+      text-transform: uppercase;
+      font-family: 'Marcellus', serif;
+    }
+
+    &  p:first-of-type {
+      @extend .h1;
+    }
+
+    h1 {
+      font-size: 1rem;
+      font-family: 'Roboto Flex', sans-serif;
+      line-height: 1.2rem;
+    }
+
+    .btn {
+      display: block;
+      margin-top: 1rem;
+      transform: scale(.9);
+    }
+  }
+
+  @media screen and (min-width: 1598px) {
+    #video-background {
+      video {
+        width: 100vw;
+        height: auto;
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    #video-background {
+      video {
+        height: auto;
+        margin-left: 0;
+      }
+    }
+
+    #title {
+      a {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  @media screen and (max-height: $vertical-breakpoint) {
+    #title {
+      padding-top: 200px;
+    }
+  }
+}

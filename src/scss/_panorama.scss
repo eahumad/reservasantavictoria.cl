@@ -1,0 +1,105 @@
+#panorama {
+  width: 100%;
+  height: 500px;
+
+
+  #controls {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    text-align: justify;
+    width: 100%;
+    padding-left: 5px;
+    padding-bottom: 3px;
+
+    .ctrl {
+      padding: 8px;
+      vertical-align: middle;
+      width: 80px;
+      height: 40px;
+      text-align: center;
+      color: #ddd;
+      background: rgba(150, 150, 150, 1);
+      display: inline-block;
+      cursor: pointer;
+      font-size: 1.6rem;
+      border-radius: 2px;
+
+      i {
+        font-size: 2.5rem;
+      }
+
+      &.active {
+        color: #fff;
+        background: rgba(190, 208, 148, 1) !important;
+        box-shadow: 0px 0px 5px rgba(190, 208, 148, 0.5);
+      }
+    }
+  }
+
+  #details {
+
+    position: absolute;
+    background-color: $earth;
+    color: white;
+    height: 180px;
+    width: 180px;
+    right: -216px;
+    top: calc(50% - 180px);
+    z-index: 2;
+    text-align: left;
+    padding: 18px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.7);
+    transition: right 1s;
+    transform: translateZ(999999px);
+
+    button {
+      background-color: transparent;
+      border: transparent;
+      font-weight: 600;
+    }
+
+    &.active {
+      right: 0;
+    }
+
+    h6 {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    div {
+
+
+      &.buttons {
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        padding-bottom: 18px;
+
+        button {
+
+          color: white;
+          hyphens: none;
+        }
+      }
+    }
+
+
+
+  }
+
+  .disableMouseHotSpot {
+    background-color: rgba(255, 255, 255, 0.0);
+    display: block;
+
+    &.active {
+      background-color: rgba(120, 250, 50, 0.4);
+      display: none;
+    }
+  }
+
+}

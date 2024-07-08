@@ -1,0 +1,6 @@
+[
+  { "nombre":"San Rafael</br>15 Kms",  "pitch":-2.30, "yaw":-106.68, "visible": true, "isLugar":true },
+  { "nombre":"Cumpeo</br>13 Kms",  "pitch":-2, "yaw":100, "visible": true, "isLugar":true },
+  { "nombre":"Curicó</br>43 Kms",  "pitch":-2, "yaw":50, "visible": true, "isLugar":true },
+  { "nombre":"Talca</br>39 Kms",  "pitch":-2, "yaw":-116, "visible": true, "isLugar":true, "altura":2 }
+]

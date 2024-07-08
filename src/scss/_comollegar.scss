@@ -1,0 +1,74 @@
+#comollegar {
+  order: 6;
+
+  background-color: $black;
+  color: $white;
+  text-align: center;
+
+  .btn {
+    display: inline-block;
+    margin: auto;
+    margin-top: 1.5rem;
+  }
+
+
+  #map {
+    height: 500px;
+    width: 100%;
+  }
+
+
+  .zoom-button {
+    background-color: $earth;
+    font-size: 14px;
+    color: $white;
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+    font-weight: 600;
+    margin-bottom: 5px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+
+    & svg {
+      display: block;
+    }
+
+    &.zoom-in {
+      margin-bottom: 5px;
+    }
+
+    &.zoom-out {
+      margin-top: 30px;
+    }
+  }
+
+  .fullscreen-button {
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    background-color: $earth;
+    color: $white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Posicionamiento personalizado de los botones */
+  .gm-style .zoom-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  .gm-style .fullscreen-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+}

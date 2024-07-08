@@ -1,0 +1,28 @@
+
+.btn {
+  border-radius: 10em;
+  text-align: center;
+  font-weight: 600;
+  padding: 16px 28px;
+  border: none;
+}
+
+.btn-earth {
+  @extend .btn;
+  background-color: $earth;
+  color: $white;
+}
+
+.btn-earth-outline {
+  @extend .btn;
+  background-color: transparent;
+  color: $earth !important;
+  border: 2px solid $earth;
+}
+
+.btn-black-outline {
+  @extend .btn;
+  background-color: transparent;
+  color: $black;
+  border: 2px solid $black;
+}

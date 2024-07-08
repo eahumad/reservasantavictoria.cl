@@ -1,26 +1,35 @@
-name: update_site
+name: Deploy to hosting
 
-on: 
-  push: 
-    branches: [ "main" ]
-  pull_request: 
-    branches: [ "main" ]
-  workflow_dispatch: 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
     runs-on: ubuntu-latest
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v3
 
-    - name: build
-      uses: mikeal/npx@master
-      #run: npx mix build
-    
-    #- name: 📂 Sync files
-    #  uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    #  with:
-    #    server: ftp.samkirkland.com
-    #    username: myFtpUserName
-    #    password: ${{ secrets.ftp_password }}
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npx mix build
+
+      - name: Copiar a servidor FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local-dir: ./public_html/
+          remote-dir: /public_html

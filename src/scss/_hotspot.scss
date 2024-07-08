@@ -1,0 +1,124 @@
+.pnlm-hotspot-base {
+  
+  &.hotspot-lugar {
+    background-color: transparent;
+    min-height: 25px;
+    width: 100px;
+    color: $black;
+
+    
+    
+
+
+    span {
+      box-shadow: 0 0 10px 0px rgba(0,0,0,0.7);
+      display:block;
+      text-align:center;
+      padding-top: 5px;
+      border-radius:5px;
+      background-color: rgba(255, 255, 255,0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    } 
+    
+    .line { //decorator
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:2px;
+      height:50px;
+      background-color: rgba(255, 255, 255,0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+    }
+    
+    .dot {
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      width:5px;
+      height:5px;
+      background-color: rgba(255, 255, 255,0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 50%;
+    }
+
+    .clear {
+      height: 55px;
+      width: 1px;
+      background-color: transparent;
+    }
+
+
+    &.altura-2 {
+
+
+      .line {
+        height: 100px;
+      }
+
+      .clear {
+        height: 100px;
+      }
+
+
+    }
+   
+  }
+
+  &.hotspot-lote {
+
+    background-color: white;
+    color: black;
+    border-radius:50%;
+    height: 25px;
+    width: 30px;
+    padding-top: 5px;
+    text-align: center;
+
+    
+
+    .hotspot-tooltip {
+      display:none;
+      background-color: white;
+      color: black;
+      width: 150px;
+      padding: 5px;
+      border-radius: 3px; 
+      h3 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &.reservado {
+      background-color: rgb(var(--color-secondary));
+      color: white; 
+
+      .hotspot-tooltip {
+        background-color: rgb(var(--color-secondary));
+        color: white; 
+      }
+    }
+
+    &.vendido {
+      background-color: red;
+      color: white;
+
+      .hotspot-tooltip {
+        background-color: red;
+        color: white;
+      }
+    }
+
+
+    &:hover, &:focus {
+      .hotspot-tooltip {
+        display:block;
+
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+#detalles {
+
+  order: 3;
+
+  background-color: $earth;
+  color: $black;
+
+
+  &>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .detalle {
+    display: flex;
+    flex-flow: row;
+    gap: 5px;
+
+    div {
+      width: 40%;
+
+      img {
+        filter: brightness(0);
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  @media screen and (min-width: $breakpoint) {
+    order: 2;
+    margin-top: -198px;
+    z-index: 3;
+
+    background-color: transparent;
+
+    &>.container {
+      display: flex;
+      justify-content: space-between;
+
+      .detalle {
+        color: white;
+        font-size: 2rem;
+
+        p {
+          margin-top: 2rem;
+        }
+
+        div {
+          width: 25%;
+
+          img {
+            filter: brightness(1);
+            width: 100%;
+          }
+
+        }
+      }
+    }
+  }
+}
