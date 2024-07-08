@@ -1,4 +1,4 @@
-name: Deploy to hosting
+name: Branch dev - Check Compile
 
 on:
   push:
