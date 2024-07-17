@@ -11,3 +11,4 @@ public_html/images/*.jpg
 public_html/images/galeria/*.png
 public_html/images/galeria/*.jpg
 .actvars.env
+public_html
