@@ -93,11 +93,11 @@
     }
 
     &.reservado {
-      background-color: rgb(var(--color-secondary));
+      background-color: $earth;
       color: white; 
 
       .hotspot-tooltip {
-        background-color: rgb(var(--color-secondary));
+        background-color: $earth;
         color: white; 
       }
     }
