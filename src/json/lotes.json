@@ -10,7 +10,7 @@
   { "numero":9, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"4751",   "clp":"39000000", "pitch":-39, "yaw":-88, "visible": true  },
   { "numero":10, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"4751",  "clp":"39000000",    "pitch":-37, "yaw":-78, "visible": true  },
   { "numero":11, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"4658",   "clp":"39000000", "pitch":-45, "yaw":-78, "visible": true  },
-  { "numero":12, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"4990",   "clp":"39000000", "pitch":-57, "yaw":-82, "visible": true  },
+  { "numero":12, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"4990",   "clp":"39000000", "pitch":-57, "yaw":-82, "visible": true  },
   { "numero":13, "tipo":"Agrícola",  "estado":"Disponible",  "mts":"4573",   "clp":"39000000", "pitch":-70, "yaw":-76, "visible": true  },
   { "numero":14, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"4572",   "clp":"39000000", "pitch":-81, "yaw":-67, "visible": true  },
   { "numero":15, "tipo":"Agrícola",  "estado":"Vendido",  "mts":"5026",   "clp":"29990000", "pitch":-82, "yaw":60, "visible": true  },
